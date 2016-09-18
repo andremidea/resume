@@ -1,0 +1,188 @@
+{
+  "basics": {
+    "name": "André Midea Jasiskis",
+    "label": "Software Engineer",
+    "summary": "Surfing from the development of complex distribute applications to building a reliable and extensible infra-structure. **That's me.** What I love is to be able to own the stack **End-to-End**, develop applications, build its infra-structure and **SHIP IT**. Lately, I'm looking a lot towards the **Data** problem and how can we better work, analyze and explore it.",
+    "website": "https://andremidea.com",
+    "phone": "+55-11-987717186",
+    "email": "midea.andre@gmail.com",
+    "picture": "andremidea.png",
+    "location": {
+      "address": "",
+      "postalCode": "94035",
+      "city": "São Paulo",
+      "countryCode": "Brazil",
+      "region": "SP"
+    },
+    "profiles": [
+      {
+        "network": "GitHub",
+        "username": "andremidea",
+        "url": "https://github.com/andremidea"
+      },
+      {
+        "network": "Twitter",
+        "username": "andremidea",
+        "url": "https://twitter.com/andremidea"
+      },
+      {
+          "network": "LinkedIn",
+          "username": "andremidea",
+          "url": "https://br.linkedin.com/in/andremidea"
+      }
+    ]
+  },
+  "work": [
+    {
+      "company": "Nubank Brasil",
+      "website": "https://nubank.com.br",
+      "position": "Software Engineer",
+      "startDate": "2015-03",
+        "summary": "Currently working on the creation of a data platform to improve data analysis, exploration, and construction of machine learning models. Work involves extraction of data from [Datomic](http://www.datomic.com/), transforming raw logs into datasets using [Apache Spark](http://spark.apache.org/) deployed on top of [Apache Mesos](mesos.apache.org) through jobs running on [Apache Aurora](aurora.apache.org). \n\n Spark jobs are done using Scala, auxiliary services are built with Clojure, data analysis, and exploratory work is done using Python. We leverage AWS using S3 for our storage backend, Redshift for publishing datasets, and a lot of tooling built using all sort of things.  \n\n Previously worked on automating, hardening and building tooling for Nubank's infra-structure. We have a strict policy to have everything automated, stateless, easy to rebuild and immutable. So the architecture was really based on these principles, for this purpose we use AMI, Docker, CloudFormation, CoreOS to enforce immutability. Also worked in the creation of an End to End stack using ECS for testing our microservices, and on the creation of many tooling so all Engineers are able to monitor, deploy and act on incidents.",
+      "highlights": [
+        "Built from scratch entire Data Space architecture and infrastructure as well the foundation for the ETL pipeline and lots of Datasets",
+        "Collaborated on the development of an Infrastructure that scaled 100x without further development",
+        "Worked with: Clojure, Scala, Python, Ruby and lots of Shell Script"
+      ]
+    },
+    {
+      "company": "Bluesoft",
+      "website": "https://bluesoft.com.br",
+      "position": "DevOps/SRE Engineer",
+      "startDate": "2013-06",
+      "endDate": "2015-03",
+        "summary": "Worked on Bluesoft's main product architectural  re-design, originally designed as a monolithic application to get leverage from the vast benefits of cloud computing. It was a long-running project to extract pieces from the main system and create micro components each one using the best tool suited for its needs. \n We've built an asynchronous processing system using Apache Camel, Spring Boot, AWS SQS, a distributed stream processor using AWS Kinesis and other cool things. \nThe team was also responsible for maintaining and improving the developer's workflow with continuous integration and delivery. \nAll work was done on AWS using Linux servers, and a bunch of services like EC2, RDS, S3, SQS, Lambda, Route53, Elastic Beans Talk and Redshift.",
+      "highlights": [
+        "Moved an 10 Year service from on-premise datacenter to AWS (successfully :) )",
+          "Dealt with a monolithic old Frankenstein application and had to make it perform to 2015 standards of scalability, reliability and security",
+        "Built lot of micro applications to solve scalability issues in the monolithic app."
+      ]
+    },
+    {
+        "company": "Bluesoft",
+        "website": "https://bluesoft.com.br",
+        "position": "Software Engineer",
+        "startDate": "2012-08",
+        "endDate": "2013-06",
+        "summary": "Worked in an agile cross-functional team that was responsible for delivering new features for the existing product, an ERP for retailers. The workday included translate customer ideas into functional pieces of code that improved the customer work, implement those features, test it and send it to production. These features were all business related and crossed all areas of the business like taxes, accounting,  managing distribution centers, supply chain and so on. \n\n Technologies were all Java-based, Spring Framework, Spring MVC, Hibernate, Quartz, String Data, Spring Boot and front end developed using Angular JS and Jquery. The team was really focused on developing things in an interactive way using TDD, continuous delivery, pair programming, Kanban, evolutive design, refactoring and End to End testing.",
+      "highlights": [
+        "Lot of business related logic (Accountability, Taxes, Logistics)",
+        "Made the team switch to a client side ui backed by a rest api"
+      ]
+    },
+    {
+      "company": "SPI - Automation Technology",
+      "position": "Intern and then Software Engineer",
+      "startDate": "2010-02",
+      "endDate": "2012-08",
+      "summary": "Worked on the development of solutions for Industrial automation, like manufacturing supervisor systems, communication drivers for several machines, M.E.S Systems, integration with PLC  and  develop Web Interfaces that interacted with all those systems to provide simplicity, visibility, and control to the production line operators. \n The fun (and stressful) part of this job was that those systems needed to be really robust and fault tolerant, because for most of the projects, the systems developed were a crucial piece of the production line and it couldn't run without the system working perfectly. For a good amount of time I've worked on the production floor next to the line monitoring behaviors, understanding the production flow and polishing the system developed to better suit the operation. \nClients were Mercedes-Benz Brasil, GM, Bic, Meritor, Magneti Marelli, Grob, Cooper, Ford Motor Company, MWM, Bridgestone, Linde Gases, Alcon, and Cummins. \nWorkday includes analyzing the client need and how to automate such thing, transform into a coherent system that really improved the working quality and put it into production on the client. Most of the work was done using C# (ASP.NET MVC), SQLServer, and front-end frameworks like Jquery and Backbone.",
+
+      "highlights": [
+          "Lots of client interactions, to gather requirements, understand problems and build solutions",
+          "Traveled accross the country working on different clients",
+          "Promoted after 6 months",
+          "Implemented agile practices in the last 2 projects I worked there."
+      ]
+    }
+  ],
+  "education": [
+    {
+       "area": "IT",
+      "studyType": "Undergraduate",
+      "institution": "Methodist University of São Paulo",
+      "courses": [
+        "Computer Science"
+      ],
+      "startDate": "2009-03",
+      "endDate": "2012-12"
+    },
+    {
+        "area": "IT",
+        "studyType": "College",
+      "institution": "State Techinal College Jorge Street",
+      "courses": [
+        "Information Technology"
+      ],
+      "startDate": "2007-02",
+      "endDate": "2009-06"
+    }
+  ],
+  "skills": [
+    {
+      "name": "Back-end",
+      "level": "master",
+      "keywords": [
+        "Clojure",
+        "Scala",
+        "Java",
+        "Python",
+        "**Functional-Programming** Fan and Lover",
+        "Reactive Programming",
+        "[Reliability Patterns](https://pragprog.com/book/mnee/release-it) enthusiast"
+      ]
+    },
+    {
+      "name": "Infrastructure",
+      "level": "advanced",
+      "keywords": [
+          "AWS - familiar with entire stack",
+          "Docker",
+          "CoreOS",
+          "Linux",
+          "Continuous Deployment",
+          "Mesos",
+          "Aurora",
+          "Dynamic and Automated Infrastructure",
+          "Immutable Infrastructure adopter"
+      ]
+    },
+    {
+      "name": "Data",
+      "level": "intermediate",
+      "keywords": [
+        "Apache Spark",
+        "Kafka Streams",
+        "Kappa Architecture",
+        "Lambda Architecture",
+        "Pandas/numpy/scikit-learn",
+          "Machine Learning (not Kaggle's level but able to make basic models)",
+        "SQL/Datalog"
+      ]
+    },
+      {
+          "name": "Other things that I can handle",
+          "level": "intermediate",
+          "keywords": [
+              "Team Lead",
+              "Agile Practices (not fan of the blablabla hype about Agile, but I'm a devoted practitioner of most practices)",
+              "Front-End Development with ClojureScript using React, Javascript using Angular and digging into [ELM](elm-lang.org)"
+          ]
+      }
+  ],
+  "presentations": [
+    {
+        "name": "QConSP - Immutable Infrastructure at Nubank",
+      "publisher": "QCon",
+      "releaseDate": "2016-04",
+        "website": "https://www.infoq.com/br/presentations/infraestrutura-imutavel-e-em-nuvem-no-nubank",
+        "summary": "Mutable shared state, is one of the top things that brings most of the complexity to the code, leading to race conditions, locks, inconsistencies and data loss. But if we add immutability as being one of the core pillars, the state stops to change and all such problems disappear. So why not bring this concept when building our infrastructure? \n\n At Nubank we adopted, acted and created strategies to refrain all mutable state in our services and infrastructure. We talked about how to build such infrastructure on AWS using CloudFormation, AMI, Docker to support our services (also immutable) that use Clojure, Datomic and Kafka, showing the benefits of adopting immutability as an essential building block in your company. "
+    },
+    {
+      "name": "QConSP - Architecting an ERP for the cloud",
+      "publisher": "QCon",
+      "releaseDate": "2015-03",
+        "summary": "We detailed the good, the bad, and the ugly things about moving our infrastructure to AWS. We shared the problems we faced and how we deal with them, also we mentioned about the possibilities that were made feasible with this transition, and how we were going to use them.",
+        "website": "https://www.infoq.com/br/presentations/arquitetando-e-evoluindo-um-erp/"
+    }
+  ],
+  "languages": [
+    {
+      "language": "Portuguese",
+      "fluency": "Native"
+    },
+    {
+      "language": "English",
+      "fluency": "Advanced"
+    }
+  ]
+}
