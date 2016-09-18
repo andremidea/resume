@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>André Midea Jasiskis</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link href='https://fonts.googleapis.com/css?family=Lato:400,500,600,700|Open+Sans:400,500,600,700'
+        rel='stylesheet' type='text/css'>
+        <style>
+            .clear-margin {
+          margin: 0;
+        }
+        .space-top {
+          margin-top: 10px;
+        }
+        .space-right {
+          margin-right: 10px;
+        }
+        .icon-left {
+          margin-right: 5px;
+        }
+        .icon-right {
+          margin-left: 5px;
+        }
+        .labels {
+          word-spacing: 5px;
+          line-height: 2;
+        }
+        .label-keyword {
+          display: inline-block;
+          background: #7eb0db;
+          color: white;
+          font-size: 0.9em;
+          padding: 5px;
+          border: 1px solid #357ebd;
+        }
+        .link-disguise {
+          color: inherit;
+        }
+        .link-disguise:hover {
+          color: inherit;
+        }
+        @media (max-width: 992px) {
+          .clear-margin-sm {
+            margin-bottom: 0;
+          }
+        }
+        body {
+          font-family: 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
+          background: #f0f0f0;
+          color: #333333;
+          font-size: 16px;
+        }
+        .text-bolder {
+          font-weight: bold;
+        }
+        @media only screen {
+          .container {
+            max-width: 50em;
+          }
+        }
+        @media (max-width: 480px) {
+          ul {
+            padding-left: 25px;
+          }
+          /*
+                .mobile-title {
+                    display: inline-block;
+                    margin-left: 5px;
+                    font-weight: bold;
+                    text-transform: uppercase;
+                    vertical-align: middle;
+                }
+        */
+          .background-details {
+            display: block;
+          }
+          .background-details .icon {
+            max-width: inherit;
+            min-width: inherit;
+            text-align: left;
+          }
+          .background-details .icon,
+          .background-details .info {
+            display: block;
+            padding: 10px 0;
+          }
+          .background-details .title {
+            display: none;
+          }
+          .card-nested {
+            padding: 5px 0;
+          }
+        }
+        .profile-card {
+          display: table;
+          width: 100%;
+        }
+        .profile-pic {
+          display: table-cell;
+          vertical-align: top;
+          padding: 1rem 4rem 0 0 ;
+        }
+        .profile-pic img {
+          width: 100px;
+          height: 100px;
+        }
+        .contact-details {
+          display: table-cell;
+        }
+        .contact-details .detail {
+          display: inline-block;
+          line-height: 2;
+          margin-right: 2rem;
+        }
+        .contact-details .detail .icon {
+          padding-right: 7px;
+          color: #888;
+        }
+        .contact-details .detail .info {
+          font-size: 0.8em;
+        }
+        .social-links {
+          line-height: 2.5;
+        }
+        .social-link {
+          display: block;
+        }
+        .social-link span {
+          display: inline-block;
+          vertical-align: middle;
+        }
+        .social-link:hover,
+        .social-link:focus {
+          text-decoration: none;
+        }
+        .social-link .fa {
+          text-align: center;
+          width: 2em;
+        }
+        .fa-github {
+          color: #454545;
+        }
+        .fa-github:hover,
+        .fa-github:focus {
+          text-decoration: none;
+          color: #2b2b2b;
+        }
+        .fa-twitter {
+          color: #33ccff;
+        }
+        .fa-twitter:hover,
+        .fa-twitter:focus {
+          text-decoration: none;
+          color: #00bfff;
+        }
+        .fa-rss {
+          color: #f36f24;
+        }
+        .fa-rss:hover,
+        .fa-rss:focus {
+          text-decoration: none;
+          color: #d8560c;
+        }
+        .fa-linkedin {
+          color: #007bb6;
+        }
+        .fa-linkedin:hover,
+        .fa-linkedin:focus {
+          text-decoration: none;
+          color: #005983;
+        }
+        .fa-skype {
+          color: #12a5f4;
+        }
+        .fa-skype:hover,
+        .fa-skype:focus {
+          text-decoration: none;
+          color: #0986ca;
+        }
+        .fa-stack-overflow {
+          color: #8e8e92;
+        }
+        .fa-stack-overflow:hover,
+        .fa-stack-overflow:focus {
+          text-decoration: none;
+          color: #747479;
+        }
+        .fa-soundcloud {
+          color: #e8822d;
+        }
+        .fa-soundcloud:hover,
+        .fa-soundcloud:focus {
+          text-decoration: none;
+          color: #cc6916;
+        }
+        .fa-pinterest {
+          color: #bd091f;
+        }
+        .fa-pinterest:hover,
+        .fa-pinterest:focus {
+          text-decoration: none;
+          color: #8c0717;
+        }
+        .fa-vimeo {
+          color: #17b3e8;
+        }
+        .fa-vimeo:hover,
+        .fa-vimeo:focus {
+          text-decoration: none;
+          color: #128fba;
+        }
+        .fa-behance {
+          color: #2c98cf;
+        }
+        .fa-behance:hover,
+        .fa-behance:focus {
+          text-decoration: none;
+          color: #2379a5;
+        }
+        .fa-codepen {
+          color: #1c1c1c;
+        }
+        .fa-codepen:hover,
+        .fa-codepen:focus {
+          text-decoration: none;
+          color: #020202;
+        }
+        .fa-foursquare {
+          color: #fa4778;
+        }
+        .fa-foursquare:hover,
+        .fa-foursquare:focus {
+          text-decoration: none;
+          color: #f91554;
+        }
+        .fa-reddit {
+          color: #545454;
+        }
+        .fa-reddit:hover,
+        .fa-reddit:focus {
+          text-decoration: none;
+          color: #3b3b3b;
+        }
+        .fa-spotify {
+          color: #acd200;
+        }
+        .fa-spotify:hover,
+        .fa-spotify:focus {
+          text-decoration: none;
+          color: #829f00;
+        }
+        .fa-dribbble {
+          color: #ce366f;
+        }
+        .fa-dribbble:hover,
+        .fa-dribbble:focus {
+          text-decoration: none;
+          color: #a82959;
+        }
+        .fa-facebook {
+          color: #4b6daa;
+        }
+        .fa-facebook:hover,
+        .fa-facebook:focus {
+          text-decoration: none;
+          color: #3b5687;
+        }
+        .fa-angellist {
+          color: #000000;
+        }
+        .fa-angellist:hover,
+        .fa-angellist:focus {
+          text-decoration: none;
+          color: #000000;
+        }
+        .fa-bitbucket {
+          color: #205081;
+        }
+        .fa-bitbucket:hover,
+        .fa-bitbucket:focus {
+          text-decoration: none;
+          color: #163758;
+        }
+        .fa-google-plus {
+          color: #bf2a1d;
+        }
+        .fa-google-plus:hover,
+        .fa-google-plus:focus {
+          text-decoration: none;
+          color: #932016;
+        }
+        .background-card h4 {
+          font-variant: small-caps;
+          color: #777777;
+          border-bottom: 1px solid #eeeeee;
+          padding-bottom: 1em;
+          margin-bottom: 1em;
+          line-height: 1.2;
+        }
+        .background-card h4:not(:first-child) {
+          margin-top: 2em;
+        }
+        h4 > .fa,
+        h4 > .title {
+          display: inline-block;
+          vertical-align: baseline;
+        }
+        h4 > .fa {
+          width: 4rem;
+        }
+        .content {
+          line-height: 1.5;
+        }
+        .card {
+          background: #ffffff;
+          border: 1px solid #e6e6e6;
+          border-radius: 3px;
+          padding: 2em 3.5em;
+        }
+        .card-nested {
+          padding: 1.5rem 0 1.5rem 4.2rem;
+        }
+        .card-wrapper {
+          padding: 5px;
+        }
+        .enumeration:not(:last-child):after {
+          content: ", ";
+        }
+        .enumeration:last-child:after {
+          content: ".";
+        }
+        @media only screen and (max-width: 768px) {
+          .profile-card {
+            display: block;
+          }
+          .contact-details,
+          .profile-pic {
+            display: block;
+            text-align: center;
+          }
+          .card-nested {
+            padding-left: 0;
+          }
+        }
+        @media only screen and (max-width: 480px) {
+          .contact-details .detail {
+            display: block;
+          }
+        }
+        .card-skills {
+          position: relative;
+        }
+        .skill-info {
+          margin-left: 20px;
+        }
+        @media only screen and (min-width: 768px) {
+          .skill {
+            border-left: 9px solid #555555;
+          }
+          .skill.beginner {
+            height: 50%;
+            border-color: #e74c3c;
+          }
+          .skill.intermediate {
+            height: 70%;
+            border-color: #f1c40f;
+          }
+          .skill.advanced {
+            border-color: #5cb85c;
+          }
+          .skill.master {
+            border-color: black;
+          }
+        }
+        @media (max-width: 768px) {
+          .quote {
+            font-size: inherit;
+          }
+        }
+        @media print {
+          body {
+            font-size: 10pt;
+          }
+          a[href]:after {
+            content: none !important;
+          }
+          .pagebreak {
+            page-break-before: always;
+          }
+          .background-card h4:not(:first-child) {
+            margin-top: 0 !important;
+          }
+          .card {
+            border: 0;
+            padding: 0;
+          }
+          .container {
+            max-width: 100%;
+            width: 100%;
+          }
+          .contact-details .detail .icon {
+            color: #888 !important;
+          }
+          .background-card h4 {
+            padding-bottom: 0.5em;
+            margin-bottom: 0.5em;
+            margin-top: 1em !important;
+          }
+          h4 > .fa {
+            display: none !important;
+          }
+          .card-nested {
+            padding: .5rem 0 .5rem 0;
+          }
+          .labels {
+            display: inline;
+          }
+          .skill-info {
+            margin-left: 0;
+          }
+          blockquote {
+            font-size: 100%;
+          }
+        }
+        </style>
+    </head>
+    
+    <body itemscope itemtype="http://schema.org/Person">
+        <div class="container">
+            <section class="row">
+                <div class="card-wrapper">
+                    <div class="card">
+                        <div class="profile-card">
+                            <div class="profile-pic">
+                                <img class="media-object img-circle center-block" data-src="holder.js/100x100"
+                                alt="André Midea Jasiskis" src="andremidea.png" itemprop="image">
+                            </div>
+                            <div class="contact-details">
+                                <div class="name-and-profession">
+                                     <h3 class="text-bolder name" itemprop="name"> André Midea Jasiskis</h3>
+
+                                     <h5 class="text-muted" itemprop="jobTitle">Software Engineer</h5>
+
+                                </div>
+                                <div class="detail"> <span class="icon">
+                        <i class="fa fa-lg fa-envelope"></i>
+                      </span>
+ <span class="info">
+                        <a href="mailto:midea.andre@gmail.com" class="link-disguise" itemprop="email">midea.andre@gmail.com</a>
+                      </span>
+
+                                </div>
+                                <div class="detail"> <span class="icon">
+                        <i class="fa fa-lg fa-phone"></i>
+                      </span>
+ <a href="tel://+55-11-987717186" class="link-disguise info"
+                                    itemprop="telephone">
+                        +55-11-987717186
+                      </a>
+
+                                </div>
+                                <div class="detail"> <span class="icon">
+                        <i class="fa fa-lg fa-map-marker"></i>
+                      </span>
+ <span class="info">
+                          São Paulo, SP,
+                          Brazil
+                        </span>
+
+                                </div>
+                            </div>
+                        </div>
+                        <hr>
+                        <div class="social-links"> <a class="social-link" href="https://github.com/andremidea" target="_blank">
+                  <span class="fa fa-github fa-2x"></span> 
+                  <span class="social-link-text">https://github.com/andremidea</span>
+                </a>
+ <a class="social-link" href="https://twitter.com/andremidea"
+                            target="_blank">
+                  <span class="fa fa-twitter fa-2x"></span> 
+                  <span class="social-link-text">https://twitter.com/andremidea</span>
+                </a>
+ <a class="social-link" href="https://br.linkedin.com/in/andremidea"
+                            target="_blank">
+                  <span class="fa fa-linkedin fa-2x"></span> 
+                  <span class="social-link-text">https://br.linkedin.com/in/andremidea</span>
+                </a>
+
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="row">
+                <div class="card-wrapper">
+                    <div class="card background-card">
+                         <h4 id="about"> <span class="fa fa-lg fa-user"></span> <span class="title">About</span> </h4>
+
+                        <div class="card-nested" itemprop="description">
+                            <p>Surfing from the development of complex distribute applications to building
+                                a reliable and extensible infra-structure. <strong>That&#x27;s me.</strong> What
+                                I love is to be able to own the stack <strong>End-to-End</strong>, develop
+                                applications, build its infra-structure and <strong>SHIP IT</strong>. Lately,
+                                I&#x27;m looking a lot towards the <strong>Data</strong> problem and how
+                                can we better work, analyze and explore it.</p>
+                        </div>
+                         <h4 id="work-experience"> <span class="fa fa-lg fa-pencil-square-o"></span> <span class="title">Work Experience</span> </h4>
+
+                        <ul class="list-unstyled">
+                            <li class="card-nested">
+                                <div class="content has-sidebar">
+                                    <p class="clear-margin-sm"> <strong>Software Engineer</strong>, <a href="https://nubank.com.br" target="_blank">Nubank Brasil</a>
+
+                                    </p>
+                                    <p class="text-muted"> <small>
+                        <span class="space-right"> Feb 2015 -  Present  </span>
+                         <span> <i class="fa fa-clock-o icon-left"></i> 1 year 6 months </span> 
+                      </small>
+
+                                    </p>
+                                    <p>Currently working on the creation of a data platform to improve data analysis,
+                                        exploration, and construction of machine learning models. Work involves
+                                        extraction of data from <a href="http://www.datomic.com/">Datomic</a>, transforming
+                                        raw logs into datasets using <a href="http://spark.apache.org/">Apache Spark</a> deployed
+                                        on top of <a href="mesos.apache.org">Apache Mesos</a> through jobs running
+                                        on <a href="aurora.apache.org">Apache Aurora</a>.
+                                        <br>
+                                        <br>Spark jobs are done using Scala, auxiliary services are built with Clojure,
+                                        data analysis, and exploratory work is done using Python. We leverage AWS
+                                        using S3 for our storage backend, Redshift for publishing datasets, and
+                                        a lot of tooling built using all sort of things.
+                                        <br>
+                                        <br>Previously worked on automating, hardening and building tooling for Nubank&#x27;s
+                                        infra-structure. We have a strict policy to have everything automated,
+                                        stateless, easy to rebuild and immutable. So the architecture was really
+                                        based on these principles, for this purpose we use AMI, Docker, CloudFormation,
+                                        CoreOS to enforce immutability. Also worked in the creation of an End to
+                                        End stack using ECS for testing our microservices, and on the creation
+                                        of many tooling so all Engineers are able to monitor, deploy and act on
+                                        incidents.</p>
+                                    <ul>
+                                        <li>Built from scratch entire Data Space architecture and infrastructure as
+                                            well the foundation for the ETL pipeline and lots of Datasets</li>
+                                        <li>Collaborated on the development of an Infrastructure that scaled 100x
+                                            without further development</li>
+                                        <li>Worked with: Clojure, Scala, Python, Ruby and lots of Shell Script</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="card-nested">
+                                <div class="content has-sidebar">
+                                    <p class="clear-margin-sm"> <strong>DevOps/SRE Engineer</strong>, <a href="https://bluesoft.com.br"
+                                        target="_blank">Bluesoft</a>
+
+                                    </p>
+                                    <p class="text-muted"> <small>
+                        <span class="space-right"> May 2013 -  Feb 2015  </span>
+                         <span> <i class="fa fa-clock-o icon-left"></i> 1 year 8 months </span> 
+                      </small>
+
+                                    </p>
+                                    <p>Worked on Bluesoft&#x27;s main product architectural re-design, originally
+                                        designed as a monolithic application to get leverage from the vast benefits
+                                        of cloud computing. It was a long-running project to extract pieces from
+                                        the main system and create micro components each one using the best tool
+                                        suited for its needs.
+                                        <br>We&#x27;ve built an asynchronous processing system using Apache Camel,
+                                        Spring Boot, AWS SQS, a distributed stream processor using AWS Kinesis
+                                        and other cool things.
+                                        <br>The team was also responsible for maintaining and improving the developer&#x27;s
+                                        workflow with continuous integration and delivery.
+                                        <br>All work was done on AWS using Linux servers, and a bunch of services
+                                        like EC2, RDS, S3, SQS, Lambda, Route53, Elastic Beans Talk and Redshift.</p>
+                                    <ul>
+                                        <li>Moved an 10 Year service from on-premise datacenter to AWS (successfully
+                                            :) )</li>
+                                        <li>Dealt with a monolithic old Frankenstein application and had to make it
+                                            perform to 2015 standards of scalability, reliability and security</li>
+                                        <li>Built lot of micro applications to solve scalability issues in the monolithic
+                                            app.</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="card-nested">
+                                <div class="content has-sidebar">
+                                    <p class="clear-margin-sm"> <strong>Software Engineer</strong>, <a href="https://bluesoft.com.br" target="_blank">Bluesoft</a>
+
+                                    </p>
+                                    <p class="text-muted"> <small>
+                        <span class="space-right"> Jul 2012 -  May 2013  </span>
+                         <span> <i class="fa fa-clock-o icon-left"></i> 9 months </span> 
+                      </small>
+
+                                    </p>
+                                    <p>Worked in an agile cross-functional team that was responsible for delivering
+                                        new features for the existing product, an ERP for retailers. The workday
+                                        included translate customer ideas into functional pieces of code that improved
+                                        the customer work, implement those features, test it and send it to production.
+                                        These features were all business related and crossed all areas of the business
+                                        like taxes, accounting, managing distribution centers, supply chain and
+                                        so on.
+                                        <br>
+                                        <br>Technologies were all Java-based, Spring Framework, Spring MVC, Hibernate,
+                                        Quartz, String Data, Spring Boot and front end developed using Angular
+                                        JS and Jquery. The team was really focused on developing things in an interactive
+                                        way using TDD, continuous delivery, pair programming, Kanban, evolutive
+                                        design, refactoring and End to End testing.</p>
+                                    <ul>
+                                        <li>Lot of business related logic (Accountability, Taxes, Logistics)</li>
+                                        <li>Made the team switch to a client side ui backed by a rest api</li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li class="card-nested">
+                                <div class="content has-sidebar">
+                                    <p class="clear-margin-sm"> <strong>Intern and then Software Engineer</strong>, SPI - Automation Technology</p>
+                                    <p
+                                    class="text-muted"> <small>
+                        <span class="space-right"> Jan 2010 -  Jul 2012  </span>
+                         <span> <i class="fa fa-clock-o icon-left"></i> 2 years 5 months </span> 
+                      </small>
+
+                                        </p>
+                                        <p>Worked on the development of solutions for Industrial automation, like
+                                            manufacturing supervisor systems, communication drivers for several machines,
+                                            M.E.S Systems, integration with PLC and develop Web Interfaces that interacted
+                                            with all those systems to provide simplicity, visibility, and control to
+                                            the production line operators.
+                                            <br>The fun (and stressful) part of this job was that those systems needed
+                                            to be really robust and fault tolerant, because for most of the projects,
+                                            the systems developed were a crucial piece of the production line and it
+                                            couldn&#x27;t run without the system working perfectly. For a good amount
+                                            of time I&#x27;ve worked on the production floor next to the line monitoring
+                                            behaviors, understanding the production flow and polishing the system developed
+                                            to better suit the operation.
+                                            <br>Clients were Mercedes-Benz Brasil, GM, Bic, Meritor, Magneti Marelli,
+                                            Grob, Cooper, Ford Motor Company, MWM, Bridgestone, Linde Gases, Alcon,
+                                            and Cummins.
+                                            <br>Workday includes analyzing the client need and how to automate such thing,
+                                            transform into a coherent system that really improved the working quality
+                                            and put it into production on the client. Most of the work was done using
+                                            C# (ASP.NET MVC), SQLServer, and front-end frameworks like Jquery and Backbone.</p>
+                                        <ul>
+                                            <li>Lots of client interactions, to gather requirements, understand problems
+                                                and build solutions</li>
+                                            <li>Traveled accross the country working on different clients</li>
+                                            <li>Promoted after 6 months</li>
+                                            <li>Implemented agile practices in the last 2 projects I worked there.</li>
+                                        </ul>
+                                </div>
+                            </li>
+                        </ul>
+                         <h4 id="skills"> <span class="fa fa-lg fa-code"></span> <span class="title">Skills</span> </h4>
+
+                        <ul class="list-unstyled">
+                            <li class="card-nested skill master"> <strong>Back-end (master):</strong>  <span class="enumeration">Clojure</span> 
+                                <span
+                                class="enumeration">Scala</span> <span class="enumeration">Java</span>  <span class="enumeration">Python</span> 
+                                    <span
+                                    class="enumeration"><strong>Functional-Programming</strong> Fan and Lover</span> <span class="enumeration">Reactive Programming</span> 
+                                        <span
+                                        class="enumeration"><a href="https://pragprog.com/book/mnee/release-it">Reliability Patterns</a> enthusiast</span>
+                            </li>
+                            <li class="card-nested skill advanced"> <strong>Infrastructure (advanced):</strong>  <span class="enumeration">AWS - familiar with entire stack</span> 
+                                <span
+                                class="enumeration">Docker</span> <span class="enumeration">CoreOS</span>  <span class="enumeration">Linux</span> 
+                                    <span
+                                    class="enumeration">Continuous Deployment</span> <span class="enumeration">Mesos</span> 
+                                        <span
+                                        class="enumeration">Aurora</span> <span class="enumeration">Dynamic and Automated Infrastructure</span> 
+                                            <span
+                                            class="enumeration">Immutable Infrastructure adopter</span>
+                            </li>
+                            <li class="card-nested skill intermediate"> <strong>Data (intermediate):</strong>  <span class="enumeration">Apache Spark</span> 
+                                <span
+                                class="enumeration">Kafka Streams</span> <span class="enumeration">Kappa Architecture</span> 
+                                    <span
+                                    class="enumeration">Lambda Architecture</span> <span class="enumeration">Pandas/numpy/scikit-learn</span> 
+                                        <span
+                                        class="enumeration">Machine Learning (not Kaggle&#x27;s level but able to make basic models)</span>
+                                            <span
+                                            class="enumeration">SQL/Datalog</span>
+                            </li>
+                            <li class="card-nested skill intermediate"> <strong>Other things that I can handle (intermediate):</strong>  <span class="enumeration">Team Lead</span> 
+                                <span
+                                class="enumeration">Agile Practices (not fan of the blablabla hype about Agile, but I&#x27;m
+                                    a devoted practitioner of most practices)</span> <span class="enumeration">Front-End Development with ClojureScript using React, Javascript using Angular and digging into <a href="elm-lang.org">ELM</a></span> 
+                            </li>
+                        </ul>
+                         <h4 id="education"><span class="fa fa-lg fa-mortar-board"></span> <span class="title">Education</span></h4>
+
+                        <ul class="list-unstyled">
+                            <li class="card-nested">
+                                <div class="content has-sidebar">
+                                    <p class="clear-margin-sm"> <strong>IT, Undergraduate</strong>,&nbsp; Methodist University of São
+                                        Paulo</p>
+                                    <p class="text-muted"> <small>
+                        Feb 2009 -  Nov 2012 
+                      </small>
+
+                                    </p> <i></i>
+
+                                    <div class="space-top labels"> <span class="label label-keyword">Computer Science</span> 
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="card-nested">
+                                <div class="content has-sidebar">
+                                    <p class="clear-margin-sm"> <strong>IT, College</strong>,&nbsp; State Techinal College Jorge Street</p>
+                                    <p
+                                    class="text-muted"> <small>
+                        Jan 2007 -  May 2009 
+                      </small>
+
+                                        </p> <i></i>
+
+                                        <div class="space-top labels"> <span class="label label-keyword">Information Technology</span> 
+                                        </div>
+                                </div>
+                            </li>
+                        </ul>
+                         <h4 id="publications"><span class="fa fa-lg fa-video-camera"></span> <span class="title">Presentations</span> </h4>
+
+                        <ul class="list-unstyled">
+                            <li class="card-nested">
+                                <div class="content has-sidebar">
+                                    <p class="clear-margin-sm"> <strong>
+                         <a href="https://www.infoq.com/br/presentations/infraestrutura-imutavel-e-em-nuvem-no-nubank"  target="_blank">QConSP - Immutable Infrastructure at Nubank</a> 
+                      </strong>,&nbsp; QCon</p>
+                                    <p class="text-muted"> <small> Presented on: 2016-04 </small>
+
+                                    </p>
+                                    <p class="clear-margin">Mutable shared state, is one of the top things that brings most of the
+                                        complexity to the code, leading to race conditions, locks, inconsistencies
+                                        and data loss. But if we add immutability as being one of the core pillars,
+                                        the state stops to change and all such problems disappear. So why not bring
+                                        this concept when building our infrastructure?
+                                        <br>
+                                        <br>At Nubank we adopted, acted and created strategies to refrain all mutable
+                                        state in our services and infrastructure. We talked about how to build
+                                        such infrastructure on AWS using CloudFormation, AMI, Docker to support
+                                        our services (also immutable) that use Clojure, Datomic and Kafka, showing
+                                        the benefits of adopting immutability as an essential building block in
+                                        your company.</p>
+                                </div>
+                            </li>
+                            <li class="card-nested">
+                                <div class="content has-sidebar">
+                                    <p class="clear-margin-sm"> <strong>
+                         <a href="https://www.infoq.com/br/presentations/arquitetando-e-evoluindo-um-erp/"  target="_blank">QConSP - Architecting an ERP for the cloud</a> 
+                      </strong>,&nbsp; QCon</p>
+                                    <p class="text-muted"> <small> Presented on: 2015-03 </small>
+
+                                    </p>
+                                    <p class="clear-margin">We detailed the good, the bad, and the ugly things about moving our infrastructure
+                                        to AWS. We shared the problems we faced and how we deal with them, also
+                                        we mentioned about the possibilities that were made feasible with this
+                                        transition, and how we were going to use them.</p>
+                                </div>
+                            </li>
+                        </ul>
+                         <h4 id="languages"><span class="fa fa-lg fa-language"></span> <span class="title">Languages</span> </h4>
+
+                        <p class="card-nested"> <span class="enumeration">
+                  <strong>Portuguese</strong> (Native)
+                </span>
+ <span class="enumeration">
+                  <strong>English</strong> (Advanced)
+                </span>
+
+                            </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+
+</html>
